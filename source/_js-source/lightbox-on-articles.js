@@ -10,7 +10,7 @@ define(['jquery'], function($){
   function applyLightBoxToImages(i) {
     var articleEntry = $(this);
 
-    articleEntry.find('img').each(prepareImages);
+    articleEntry.find('img').filter(e => e.hasClass('no-process')).each(prepareImages);
 
     articleEntry.find('a[data-lightbox]').each(addRelPropertyOnLinks);
 

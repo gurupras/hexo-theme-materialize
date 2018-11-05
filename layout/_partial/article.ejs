@@ -15,7 +15,7 @@
           <% } %>
 
             <div class="article-meta">
-              <i class="fa fa-calendar"></i>
+              <!-- <i class="fa fa-calendar"></i> -->
               <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, 'MMM DD, YYYY') %></time>
             </div>
           </header>
@@ -31,7 +31,7 @@
 
           <% if (post.excerpt && index && theme.excerpt_link) { %>
             <p class="article-more-link">
-              <a href="<%- url_for(post.path) %>#more" class="waves-effect waves-light btn red lighten-2">
+              <a href="<%- url_for(post.path) %>#more" class="waves-effect waves-light btn read-more-btn">
                 <%= theme.excerpt_link %>
                 &nbsp;
                 <i class="fa fa-plus-circle"></i>

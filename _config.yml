@@ -1,7 +1,8 @@
 # Header
 menu:
-  Home: /
-  Blog: /blog
+  twoseven.xyz:
+    href: https://twoseven.xyz
+    target: _blank
 
 rss: /atom.xml
 
@@ -34,6 +35,7 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+show_powered_by: false
 
 stylus:
   compress: false

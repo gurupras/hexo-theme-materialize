@@ -10,7 +10,7 @@
       <ul class="right hide-on-med-and-down">
         <% for (var i in theme.menu){ %>
           <li>
-            <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            <a class="main-nav-link" href="<%- url_for(theme.menu[i].href ? theme.menu[i].href : theme.menu[i]) %>" target="<%= theme.menu[i].target ? theme.menu[i].target : '_self' %>"><%= i %></a>
           </li>
         <% } %>
       </ul>
@@ -25,7 +25,7 @@
 <ul id="nav-mobile" class="side-nav">
   <% for (var i in theme.menu){ %>
   <li>
-    <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+    <a class="main-nav-link" href="<%- url_for(theme.menu[i].href ? theme.menu[i].href : theme.menu[i]) %>" target="<%= theme.menu[i].target ? theme.menu[i].target : '_self' %>"><%= i %></a>
   </li>
   <% } %>
 </ul>
