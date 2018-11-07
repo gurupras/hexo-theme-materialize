@@ -50,6 +50,7 @@ module.exports = (grunt) => {
         src: [
           'node_modules/jquery/dist/jquery.min.js',
           'node_modules/materialize-css/dist/js/materialize.min.js',
+          'node_modules/plyr/dist/plyr.min.js',
           '.tmp/vendors.min.js'
         ]
       }
@@ -63,7 +64,8 @@ module.exports = (grunt) => {
           'source/css/vendors.css': [
             'node_modules/font-awesome/css/font-awesome.css',
             'node_modules/materialize-css/dist/css/materialize.css',
-            'node_modules/lightbox2/dist/css/lightbox.css'
+            'node_modules/lightbox2/dist/css/lightbox.css',
+            'node_modules/plyr/dist/plyr.css'
           ]
         }
       }
@@ -76,7 +78,7 @@ module.exports = (grunt) => {
           appDir: 'source/_js-source',
           mainConfigFile: 'source/_js-source/app.js',
           baseUrl: '.',
-          optimize: 'uglify2',
+          optimize: 'none',
           uglify2: {
             mangle: false
           },
@@ -88,7 +90,8 @@ module.exports = (grunt) => {
           paths: {
             jquery: 'empty:',
             // lightbox need to be here, because it cant find images if placed on head
-            lightbox: '../../node_modules/lightbox2/dist/js/lightbox'
+            lightbox: '../../node_modules/lightbox2/dist/js/lightbox',
+            Plyr: '../../node_modules/plyr/dist/plyr'
           },
           modules: [
             {

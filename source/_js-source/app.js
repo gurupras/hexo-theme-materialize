@@ -1,6 +1,6 @@
 'use strict';
 
-require(['jquery', 'loadCss', 'share-post', 'lightbox-on-articles', 'lightbox'], function ($) {
+require(['jquery', 'loadCss', 'share-post', 'lightbox-on-articles', 'lightbox', 'Plyr'], function ($) {
 
   $('.button-collapse').sideNav();
 
@@ -20,4 +20,3 @@ require(['jquery', 'loadCss', 'share-post', 'lightbox-on-articles', 'lightbox'],
   });
 
 });
-

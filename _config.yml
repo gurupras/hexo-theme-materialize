@@ -1,7 +1,15 @@
 # Header
 menu:
-  Home: /
-  Blog: /blog
+  twoseven.xyz:
+    href: https://twoseven.xyz
+    target: _blank
+  About:
+    href: /about
+  twitter:
+    html: '<a href="https://twitter.com/twosevenxyz" target="_blank"><i class="fa fa-twitter" style="font-size: 1.2em; color: #1da1f2;"></a>'
+  facebook:
+    html: '<a href="https://twitter.com/twosevenxyz" target="_blank"><i class="fa fa-facebook-f" style="font-size: 1.2em; color: #3B5998;"></a>'
+
 
 rss: /atom.xml
 
@@ -30,10 +38,11 @@ show_count: false
 
 # Miscellaneous
 favicon: images/favicon
-twitter:
+twitter: twosevenxyz
 google_plus:
 fb_admins:
 fb_app_id:
+show_powered_by: false
 
 stylus:
   compress: false

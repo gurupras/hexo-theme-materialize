@@ -4,5 +4,6 @@ app.js
 loadCss.js
 share-post.js
 lightbox-on-articles.js
-D:/projects/carlos-algms.github.io/themes/materialize/node_modules/lightbox2/dist/js/lightbox.js
+/home/guru/workspace/videoshare-blog/themes/hexo-theme-materialize/node_modules/lightbox2/dist/js/lightbox.js
+/home/guru/workspace/videoshare-blog/themes/hexo-theme-materialize/node_modules/plyr/dist/plyr.js
 app.js

@@ -32,3 +32,34 @@ strong {
 @import "_partial/header";
 @import "_partial/highlight";
 @import "_partial/index";
+
+img.inline-image {
+  width: 400px;
+  float: right;
+  margin: 10px !important;
+}
+
+code.only-mono {
+  background-color: inherit !important;
+}
+
+.toc::before {
+  content: 'Contents';
+  font-weight: bold;
+}
+.toc {
+  margin-top: 1em;
+  background-color: #f6f8fa;
+  padding: 0.4em 1em;
+}
+
+.toc ul {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+@media (min-width: 1024px) {
+  .toc {
+    width: 40%;
+  }
+}
