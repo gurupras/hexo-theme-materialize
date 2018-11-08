@@ -31,7 +31,12 @@
 
           <% if (post.excerpt && index && theme.excerpt_link) { %>
             <p class="article-more-link">
-              <a href="<%- url_for(post.path) %>#more" class="waves-effect waves-light btn read-more-btn">
+              <a href="<%- url_for(post.path) %>#more"
+                  <% if (openInNewTab) { %>
+                    target="_blank"
+                  <% } else { %>
+                  <% } %>
+                  class="waves-effect waves-light btn read-more-btn">
                 <%= theme.excerpt_link %>
                 &nbsp;
                 <i class="fa fa-plus-circle"></i>
