@@ -6,9 +6,13 @@ menu:
   About:
     href: /about
   twitter:
-    html: '<a href="https://twitter.com/twosevenxyz" target="_blank"><i class="fa fa-twitter" style="font-size: 1.2em; color: #1da1f2;"></a>'
+    create_anchor: true
+    href: https://twitter.com/twosevenxyz
+    icon: '<i class="fa fa-twitter" style="font-size: 1.2em; color: #1da1f2;">'
   facebook:
-    html: '<a href="https://twitter.com/twosevenxyz" target="_blank"><i class="fa fa-facebook-f" style="font-size: 1.2em; color: #3B5998;"></a>'
+    create_anchor: true
+    href: https://facebook.com/twosevenxyz
+    icon: '<i class="fa fa-facebook-f" style="font-size: 1.2em; color: #3B5998;">'
 
 
 rss: /atom.xml

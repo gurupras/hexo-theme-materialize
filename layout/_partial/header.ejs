@@ -10,8 +10,8 @@
       <ul class="right hide-on-med-and-down">
         <% for (var i in theme.menu){ %>
           <li>
-            <% if( theme.menu[i].html ) { %>
-              <%- theme.menu[i].html %>
+            <% if( theme.menu[i].create_anchor ) { %>
+              <a href="<%- theme.menu[i].href %>" target="_blank"> <%- theme.menu[i].icon %> </a>
             <% } else { %>
               <a class="main-nav-link" href="<%- url_for(theme.menu[i].href ? theme.menu[i].href : theme.menu[i]) %>" target="<%= theme.menu[i].target ? theme.menu[i].target : '_self' %>"><%= i %></a>
             <% } %>
@@ -29,8 +29,8 @@
 <ul id="nav-mobile" class="side-nav">
   <% for (var i in theme.menu){ %>
   <li>
-    <% if( theme.menu[i].html ) { %>
-      <%= theme.menu[i].html %>
+    <% if( theme.menu[i].create_anchor ) { %>
+      <a href="<%- theme.menu[i].href %>" target="_blank"> <%- i.charAt(0).toUpperCase() + i.slice(1) %> <%- theme.menu[i].icon %> </a>
     <% } else { %>
       <a class="main-nav-link" href="<%- url_for(theme.menu[i].href ? theme.menu[i].href : theme.menu[i]) %>" target="<%= theme.menu[i].target ? theme.menu[i].target : '_self' %>"><%= i %></a>
     <% } %>
