@@ -71,26 +71,30 @@
 </head>
 <body>
 
-  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <% if (page.layout !== 'recent_posts') { %>
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <% } %>
 
   <div id="main-container">
     <%- body %>
   </div>
 
-  <footer class="page-footer grey darken-2">
-    <div class="footer-copyright">
-      <div class="container">
-        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+  <% if (page.layout !== 'recent_posts') { %>
+    <footer class="page-footer grey darken-2">
+      <div class="footer-copyright">
+        <div class="container">
+          &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
 
-        <div class="right">
-          <%if (theme.show_powered_by) { %>
-            Powered by <a href="http://hexo.io/" rel="nofollow" class="white-text" target="_blank">Hexo</a>
-          <% } %>
+          <div class="right">
+            <%if (theme.show_powered_by) { %>
+              Powered by <a href="http://hexo.io/" rel="nofollow" class="white-text" target="_blank">Hexo</a>
+            <% } %>
 
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  <% } %>
 
   <%- js('js/app') %>
 
