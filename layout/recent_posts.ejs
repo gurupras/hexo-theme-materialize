@@ -2,10 +2,6 @@
   <div class="row">
     <div class="col s12">
 
-      <% if ( is_tag() ) { %>
-        <h2 class="header color-featured">Tag: <%- page.tag %></h2>
-      <% } %>
-
       <% if (site.posts.length) { %>
         <% site.posts.sort('date', -1).limit(3).each(function(post){ %>
           <%- partial('_partial/article', {post: post, index: true, openInNewTab: true}) %>
